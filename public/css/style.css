@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    font-family:'Ubuntu' ;
+}
+
+.cabecalho{
+    height: 50px;
+    background-color: #2b326d;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    /* width: 100%; */
+    display: flex;
+    flex-direction:inline;
+    padding: 60px;
+}
+.conteiner-sigaa{
+    height: 150;
+    width: 150px;
+    background-color: #ADB2E1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 15px;
+    /* padding-left: 30px; */
+    /* color: ; */
+    
+}
+.conteiner-sigaa:hover{
+    background-color: #1a2cc7;
+    color: white;
+}
+
+.conteiner-adm{
+    height: 150;
+    width: 150px;
+    background-color: #ADB2E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 15px;
+}
+.conteiner-adm:hover{
+    background-color: #1a2cc7;
+    color: white;
+}
+
+.conteiner-sipac{
+    height: 150;
+    width: 150px;
+    background-color: #ADB2E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 15px;
+
+}
+.conteiner-sipac:hover{
+    background-color: #1a2cc7;
+    color: white;
+}
+
+.conteiner-rh{
+    height: 150;
+    width: 150px;
+    background-color: #ADB2E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 15px;
+}
+.conteiner-rh:hover{
+    background-color: #1a2cc7;
+    color: white;
+}
+
+.conteiner-EL{
+    height: 150;
+    width: 150px;
+    background-color: #ADB2E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.conteiner-EL:hover{
+    background-color: #1a2cc7;
+    color: white;
+}
+
+
+/* formatando as caixas de login e cadastro  */
+
