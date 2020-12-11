@@ -1,9 +1,19 @@
-*{
+* {
     margin: 0;
-    font-family:'Ubuntu' ;
+    padding: 0;
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
 }
 
-.cabecalho{
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho {
+    width: 100%;
     height: 50px;
     background-color: #2b326d;
     color: white;
@@ -12,100 +22,129 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
-.conteiner{
-    /* width: 100%; */
+.conteiner {
+    width: 100%;
     display: flex;
-    flex-direction:inline;
-    padding: 60px;
-}
-.conteiner-sigaa{
-    height: 150;
-    width: 150px;
-    background-color: #ADB2E1;
-    
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
-    border-radius: 15px;
-    /* padding-left: 30px; */
-    /* color: ; */
-    
-}
-.conteiner-sigaa:hover{
-    background-color: #1a2cc7;
-    color: white;
+    flex-wrap: wrap;
 }
 
-.conteiner-adm{
-    height: 150;
-    width: 150px;
+.conteiner-child {
+    height: 5rem;
+    width: 10rem;
     background-color: #ADB2E1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 1rem;
     border-radius: 15px;
 }
-.conteiner-adm:hover{
+
+.conteiner-child a {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-size: 1em;
+}
+
+.conteiner-child a:hover {
+    color: white;
+}
+
+.conteiner-child:hover {
     background-color: #1a2cc7;
     color: white;
 }
 
-.conteiner-sipac{
-    height: 150;
-    width: 150px;
-    background-color: #ADB2E1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    border-radius: 15px;
-
-}
-.conteiner-sipac:hover{
-    background-color: #1a2cc7;
-    color: white;
-}
-
-.conteiner-rh{
-    height: 150;
-    width: 150px;
-    background-color: #ADB2E1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    border-radius: 15px;
-}
-.conteiner-rh:hover{
-    background-color: #1a2cc7;
-    color: white;
-}
-
-.conteiner-EL{
-    height: 150;
-    width: 150px;
-    background-color: #ADB2E1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    border-radius: 15px;
-    font-size: 12px;
-}
-.conteiner-EL:hover{
-    background-color: #1a2cc7;
-    color: white;
+.active {
+    background-color: #3c7397;
 }
 
 
 /* formatando as caixas de login e cadastro  */
 
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dde8ec;
+    width: 100%;
+    padding: 2rem;
+}
+
+.form-login,
+.form-login .user,
+.form-login .password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user,
+.password {
+    margin-bottom: 1rem;
+}
+
+label,
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #647055;
+    margin-bottom: .5rem
+}
+
+.notlogin {
+    margin-top: 1.9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.notlogin .casecadastroprof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.notlogin .casecadastroaluno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.casecadastroaluno span,
+.casecadastroprof span {
+    line-height: 1.2em;
+    margin-bottom: .5rem
+}
+
+.notlogin a {
+    margin-top: 1rem;
+    color: white;
+    background-color: #82d8ee;
+    border: none;
+    height: 1.7rem;
+    width: 6rem;
+    border-radius: 8px;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
