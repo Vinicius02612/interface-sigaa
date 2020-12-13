@@ -4,18 +4,86 @@
     font-family: 'Ubuntu';
     box-sizing: border-box;
 }
-
+/* 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+} */
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;   
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    
+}
+
+/* Adicionando responsividade manualmente  */
+
+@media(max-width: var (--breakpoint-lg)) {
+    #navegar .color{
+        background-position-x: 10vw;
+        align-items: center;
+        text-align: center;
+    }
+    /* #page-home header a {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home main {
+        align-items: center;
+    }
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    } */
+}
+
+@media(min-width:--breakpoint-md){
+    #navegar{
+        width: 100px;
+        align-items: center;
+        text-align: center;
+
+    }
+   
+}
+
+#color{
+    color:var(--white);
+    
 }
 
 .cabecalho {
-    width: 100%;
+    /* width: 100%; */
     height: 50px;
-    background-color: #2b326d;
+  
     color: white;
     text-align: center;
     display: flex;
@@ -31,6 +99,55 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#letra{
+    color: var(--danger);
+    font-weight: 1rem;
+}
+
+section#sigaa{
+    /* height: 300px; */
+    /* width: 845px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#sectionLogin{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.card-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    padding-top:10px ;
+    width: 430px;
+    height: var(--breakpoint-sm);
+    background-color:rgba(253, 246, 246, 0.075) ;
+
+}
+
+input{
+    width: 350px;
+    margin-bottom:5px ;
+}
+
+
+section#btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteiner-child {
@@ -67,16 +184,25 @@
 
 
 /* formatando as caixas de login e cadastro  */
-
+/* 
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #dde8ec;
+    background-color: #2b326d;
     width: 100%;
     padding: 2rem;
-}
+    animation-name: frame;
+    animation-duration: 2ms ;
+} */
+/* .form-login{
+    background-color: rgba(255, 255, 255, 0.356);
+    height: 300px;
+    width: 300px;
+    text-align: left;
+    
+} */
 
 .form-login,
 .form-login .user,
@@ -90,14 +216,18 @@
 .user,
 .password {
     margin-bottom: 1rem;
+  
 }
 
 label,
 label {
     font-weight: bold;
     font-size: 16px;
-    color: #647055;
-    margin-bottom: .5rem
+    color: #000000;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .notlogin {
@@ -138,7 +268,7 @@ label {
     margin-top: 1rem;
     color: white;
     background-color: #82d8ee;
-    border: none;
+    border: 1px;
     height: 1.7rem;
     width: 6rem;
     border-radius: 8px;
@@ -148,3 +278,14 @@ label {
     justify-content: center;
     text-decoration: none;
 }
+
+/* adicionando animações no login  */
+@keyframes frame{
+    from{
+        opacity: 0;
+
+    }to{
+        opacity: 2;
+    }
+}
+
